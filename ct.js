@@ -1,4 +1,4 @@
  window.onload = function() {
-        // alert('Page loaded');
+        alert('Page loaded');
     document.querySelector("a[href='/content']").remove();
 };
