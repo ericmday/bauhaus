@@ -1,43 +1,3 @@
-:root {
-  --primary-bg: white;
-	--primary-font-color: black;
-	--primary-border-color:black;
-	
-  --nav-bg: var(--primary-bg);
-	--nav-border-color: var(--primary-border-color);
-	--nav-font-color: var(--primary-font-color);
-	
-	--sticky-border-color: var(--primary-border-color);
-	--sticky-bg: var(--primary-bg);
-	--sticky-font-color: var(--primary-font-color);
-	
-	--textblock-bg: transparent;
-	--textblock-header-size: 16px;
-	--textblock-header-font-color: #c1282f;
-	--textblock-font-color: var(--primary-font-color);
-	
-	--slider-font-color:white;
-	--slider-font-bg-color:linear-gradient(to right, black 0%, black 100%);
-	--slider-card-spacing:16px;
-	
-	--grid-gallery-text-color: white;
-	--grid-gallery-spacing:16px;
-	
-	--footer-border-color: var(--primary-border-color);
-	--footer-bg: transparent;
-	--footer-font-color: var(--primary-font-color);
-	
-	--slider-gutter: 20px;
-	--preloader: url("https://ericmday.github.io/site/Bauhaus.png")
-}
-
-
-/* Change the width of the page content */
-
-:root {
-	--min-width: 100% !important;
-}
-
 /* Remove Notion Header (Page Title, Cover and Icon)*/
 
 .notion-header {
@@ -112,6 +72,32 @@ html {
 	font-size: var(--textblock-header-size);
 }
 
+/* Button - .notion-quote */
+.notion-quote {
+  background-color:var(--button-background) !important;
+  min-width:150px;
+  box-sizing: content;
+  width:fit-content;
+  text-align:center;
+  border:1px solid black;
+  border-radius:var(--button-border-radius) !important;
+  min-height:40px;
+  display:inline-flex;
+  align-items: center;
+  padding:10px 20px;
+  color:var(--button-font-color-default);
+  background: var(--button-bg-hover-color);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 0 65%;
+  margin-left: 0px;
+  transition: all .6s ease;
+}
+
+.notion-quote:hover {
+  background-size:100% 100%;
+  color:var(--button-font-color-hover);
+}
 
 /* Navbar */
 
@@ -190,7 +176,7 @@ a.notion-link.super-navbar__item:hover {
 	margin-bottom: 10px;
 	padding: 0 12px;
 	color: #ffffff;
-	background-color: #000000
+	background-color: var(--hero-video-text-bg);
 }
 
 @media all and (max-width: 1024px) {
@@ -213,11 +199,20 @@ a.notion-link.super-navbar__item:hover {
 	}
 }
 
+@media all and (max-width:480px) {
+  .video {
+  object-position:var(--video-position-mobile);
+}
+}
+
 /* Sticky section headers */
 
 .notion-callout.bg-yellow-light {
 	border-bottom: 1px solid var(--sticky-border-color);
 	border-top: 1px solid var(--sticky-border-color);
+	border-left:none;
+	border-right:none;
+	border-radius:0px !important;
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.62;
@@ -273,7 +268,6 @@ a.notion-link.super-navbar__item:hover {
 	-moz-animation-direction: alternate;
 }
 
-
 /* Text block sections */
 
 .notion-callout.bg-green-light {
@@ -299,6 +293,7 @@ a.notion-link.super-navbar__item:hover {
 .notion-callout.bg-green-light .notion-heading {
 	margin-bottom: 14px;
 	padding-left: 0px !important;
+	font-weight:var(--textblock-header-weight) !important;
 }
 
 .notion-callout.bg-green-light span.highlighted-color {
@@ -725,16 +720,19 @@ h3.notion-collection__header {
 
 .notion-callout.bg-blue-light {
 	border-top: 1px solid var(--footer-border-color);
+	border-left:none;
+	border-right:none;
+	border-radius:0px !important;
 	background-color: var(--footer-bg);
 	padding-bottom: 10%;
 	border-bottom: none !important;
 	color:var(--footer-font-color) !important;
+	
 }
 
 .notion-callout.bg-blue-light .notion-semantic-string .link {
   border-bottom:none;
   color: var(--footer-font-color) !important;
-  opacity:1;
 }
 
 .notion-callout.bg-blue-light .notion-callout__content .notion-image.normal img {
@@ -844,7 +842,7 @@ h3.notion-collection__header {
 
 .notion-column h3.notion-heading {
 	padding-top: 0px;
-	color: darkgray;
+	color: var(--subpage-subheader-color);
 	font-weight: 500;
 }
 
@@ -854,6 +852,32 @@ h3.notion-collection__header {
 
 .notion-column h1.notion-heading {
 	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-weight:500;
+	padding-left:0px !important;
+	color:var(--primary-font-color);
+}
+
+.notion-text__content .highlighted-color {
+  color: var(--subpage-section-color);
+}
+
+.notion-text .notion-text__content {
+  color:var(--primary-font-color);
+}
+
+.notion-column-list .notion-column .notion-image {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.notion-column .notion-image img {
+    border-radius:10px !important;
+}
+
+div.notion-image.normal {
+    display: flex;
+    align-items: center;
 }
 
 @media all and (max-width:680px) {
@@ -877,7 +901,6 @@ h3.notion-collection__header {
 	.notion-image.normal img:not(.notion-callout__content .notion-image.normal img) {
 		max-width: 100vw !important;
 		object-fit: cover !important;
-		object-position: 0px -10vw !important;
 	}
 	.notion-callout__content .notion-image.normal img {
 		margin-top: -10px !important;
@@ -933,4 +956,81 @@ h3.notion-collection__header {
 		width: 100vw;
 		grid-gap: 0px;
 	}
+}
+
+/* Globals */ 
+.notion-callout.bg-red-light {
+    background: transparent;
+    border: 0px;
+}
+
+#page-globals .notion-toggle {
+  display:revert;
+  background:transparent;
+}
+
+/*Misc */
+
+.notion-header__content {
+  margin:0 auto !important; 
+  text-align: center !important;
+}
+
+#page-content .notion-header__title-wrapper {
+  display:inline-block !important;
+}
+
+#page-content .notion-header {
+  display:revert !important;
+}
+
+#page-content .notion-collection-table {
+  display:none !important;
+}
+
+#page-content .notion-header__content.no-cover.has-icon-image {
+    visibility:hidden !important;
+}
+
+#page-content .notion-header__title-wrapper {
+    visibility:hidden !important;
+    color:var(--no-content-color) !important;
+}
+
+#page-content .notion-header__description {
+    visibility:hidden;
+    display: grid;
+    grid-gap: 15px !important;
+}
+
+#page-content .notion-header__title-wrapper:before {
+    visibility: visible;
+    content:"Page Not Found";
+    font-size:3em;
+    font-weight:500;
+}
+
+#page-content .notion-header__title-wrapper div {
+  display:grid !important;
+  text-align:center !important;
+  margin:0px !important;
+}
+
+#page-content .notion-header__title-wrapper div:before {
+    visibility:visible;
+    content:"We're not sure where it went...";
+    font-size:2em;
+    position:relative;
+}
+
+#page-content .notion-header__title-wrapper div:after {
+    visibility:visible;
+    content:var(--no-content);
+}
+
+@media all and (max-width:680px) {
+  #page-content .notion-header__title-wrapper {
+    margin-top:30vh !important;
+    zoom:65%;
+  }
 }
