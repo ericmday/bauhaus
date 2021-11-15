@@ -468,7 +468,7 @@ h3.notion-collection__header {
 
 /* Gallery slider cards - uses Notion large gallery  */
 
-/* .notion-collection-card__cover.large>span,
+.notion-collection-card__cover.large>span,
 .notion-collection-card__cover.medium>span {
 	height: auto  !important;
 	max-height: none  !important;
@@ -496,28 +496,28 @@ h3.notion-collection__header {
 	grid-template-columns: 95% !important;
 	grid-auto-flow: column !important;
 	grid-auto-columns: calc(95% - var(--slider-gutter) * 2) !important;
-	-ms-overflow-style: none !important; */
+	-ms-overflow-style: none !important;
 	/* IE and Edge */
-/* 	scrollbar-width: none !important; */
+	scrollbar-width: none !important;
 	/* Firefox */
-/* 	grid-gap:var(--slider-card-spacing) !important; */
+	grid-gap:var(--slider-card-spacing) !important;
 }
 
-/* @media all and (max-width:680px) {
+@media all and (max-width:680px) {
 	.notion-collection-gallery.large {
 		grid-template-columns: 90% !important;
 		grid-auto-flow: column !important;
 		grid-auto-columns: calc(95% - var(--slider-gutter) * 2) !important;
 	}
 }
- */
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
-/* .notion-collection-gallery.large::-webkit-scrollbar {
+.notion-collection-gallery.large::-webkit-scrollbar {
 	display: none !important;
 }
- */
+
 
 /* Grid gallery - uses Notion medium card gallery */
 
