@@ -65,7 +65,7 @@ html {
     	}
 	.notion-column,
 	.notion-image.normal img {
-		width: 90%  !important;
+		width: 100%  !important;
 		margin: 0 auto  !important;
 	}
 	
@@ -948,6 +948,11 @@ div.notion-image.normal {
 	
 	div.notion-image img {
  	   	border-radius:10px !important;
+	}
+	
+	.notion-column-list .notion-column .notion-image {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
 	}
 }
 
