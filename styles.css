@@ -149,6 +149,12 @@ a.notion-link.super-navbar__item:hover {
 	max-height: calc(100vh - 67px) !important;
 }
 
+.header_video_wrapper .image {
+	width: 100% !important;
+	object-fit: cover !important;
+	max-height: calc(100vh - 67px) !important;
+}
+
 .home--hero-video--text-desktop {
 	display: block !important;
 }
@@ -193,6 +199,11 @@ a.notion-link.super-navbar__item:hover {
 		left: 20px !important;
 	}
 	.header_video_wrapper video {
+		height: 100% !important;
+		/* fill */
+		object-fit: cover !important;
+	}
+	.header_video_wrapper .image {
 		height: 100% !important;
 		/* fill */
 		object-fit: cover !important;
