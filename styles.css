@@ -720,6 +720,12 @@ h3.notion-collection__header {
 	}
 }
 
+@media all and (max-width:680px) {
+	.notion-collection-gallery.medium .notion-property.notion-property__title {
+		font-size: 2em !important;
+	}
+}
+
 
 /* Small gallery - Awards & Client logos - uses Notion small gallery */
 
