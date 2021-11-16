@@ -552,7 +552,7 @@ h3.notion-collection__header {
 }
 
 /*Scrollbar thickness*/
-.notion-collection-gallery.large::-webkit-scrollbar {
+/* .notion-collection-gallery.large::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0);
@@ -560,20 +560,20 @@ h3.notion-collection__header {
   border-radius: 10px;
   background:rgb(0,0,0,0.1);
 }
-
+ */
 /*Scrollbar track color*/
-.notion-collection-gallery.large::-webkit-scrollbar-track {
+/* .notion-collection-gallery.large::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
-
-.notion-collection-gallery.large::-webkit-scrollbar-track-piece:end {
+ */
+/* .notion-collection-gallery.large::-webkit-scrollbar-track-piece:end {
     border-radius: 10px;
     background: var(--primary-border-color);
     height: 3px;
 }
-
+ */
 @media all and (max-width:480px) {
 	.notion-collection-gallery.large::-webkit-scrollbar {
 		display: none !important;
