@@ -122,6 +122,10 @@ html {
 	color:var(--nav-font-color)  !important;
 }
 
+.super-navbar__content {
+  height:58px !important;
+}
+
 a.notion-link.super-navbar__item {
 	border-left: 1px solid var(--nav-border-color)  !important;
 	opacity:1 !important;
