@@ -496,9 +496,9 @@ h3.notion-collection__header {
 	grid-template-columns: 95% !important;
 	grid-auto-flow: column !important;
 	grid-auto-columns: calc(95% - var(--slider-gutter) * 2) !important;
-	-ms-overflow-style: none !important;
+/* 	-ms-overflow-style: none !important; */
 	/* IE and Edge */
-	scrollbar-width: none !important;
+/* 	scrollbar-width: none !important; */
 	/* Firefox */
 	grid-gap:var(--slider-card-spacing) !important;
 }
