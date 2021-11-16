@@ -53,11 +53,22 @@ html {
 	.notion-column-list .notion-column:nth-child(3) {
 		display: none !important;
 	}
+	
+	.super-content {
+		padding-left:15px !important;
+		padding-right: 15px !important;
+    	}
+    
+	.notion-callout {
+        	margin-left: -15px !important;
+	        margin-right: -15px !important;
+    	}
 	.notion-column,
 	.notion-image.normal img {
 		width: 90%  !important;
 		margin: 0 auto  !important;
 	}
+	
 	.notion-callout__content .notion-column-list .notion-column:first-child,
 	.notion-callout__content .notion-column-list .notion-column:nth-child(3) {
 		display: initial  !important;
@@ -933,6 +944,10 @@ div.notion-image.normal {
 @media all and (max-width:680px) {
 	.notion-column h1.notion-heading {
 		padding-top: 50px  !important;
+	}
+	
+	div.notion-image img {
+ 	   	border-radius:10px !important;
 	}
 }
 
