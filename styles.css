@@ -216,11 +216,7 @@ a.notion-link.super-navbar__item:hover {
 }
 
 @media all and (max-width:680px) {
-  .notion-callout.bg-yellow-light {
-    min-width:revert !important;
-  }
-  
- .header_video_wrapper {
+.header_video_wrapper {
     transition: all .1s ease-in-out;
  }
 }
@@ -263,6 +259,13 @@ a.notion-link.super-navbar__item:hover {
 	margin-top: -6px !important;
 	margin-bottom: -3px !important;
 }
+
+@media all and (max-width:680px) {
+  .notion-callout.bg-yellow-light {
+    min-width:revert !important;
+  }
+}
+
 
 
 /* Sticky section header blinker icon*/
