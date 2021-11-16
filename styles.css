@@ -137,6 +137,11 @@ a.notion-link.super-navbar__item:hover {
 	width: 100% !important;
 }
 
+.image {
+	width: 100% !important;
+}
+
+
 .header_video_wrapper {
 	position: relative !important;
 	overflow: hidden !important;
@@ -149,7 +154,7 @@ a.notion-link.super-navbar__item:hover {
 	max-height: calc(100vh - 67px) !important;
 }
 
-.header_video_wrapper .image {
+.header_video_wrapper div.image {
 	width: 100% !important;
 	object-fit: cover !important;
 	max-height: calc(100vh - 67px) !important;
