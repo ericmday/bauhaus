@@ -168,7 +168,7 @@ a.notion-link.super-navbar__item:hover {
   padding-bottom:0px !important;
   border:none !important;
   position:relative;
-  height:calc(100vh - 40px) !important;
+  height:100vh !important;
 }
 
 .notion-callout.color-gray-light img {
@@ -218,7 +218,7 @@ a.notion-link.super-navbar__item:hover {
 }
 
 .notion-callout.color-gray-light:not(.notion-callout.color-gray-light .notion-callout.color-gray-light) {
-    height:calc(100vh - 40px) !important;
+    height:100vh !important;
 }
 
 .notion-callout.color-gray-light .notion-callout.color-gray-light {
