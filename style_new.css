@@ -777,9 +777,9 @@ h3.notion-collection__header {
 	}
 	
 	.notion-collection-card__cover.small,
-.notion-collection-card__cover.small>span,
-.notion-collection-card__cover.small img {
-  padding-bottom:10px !important;
+	.notion-collection-card__cover.small>span,
+	.notion-collection-card__cover.small img {
+	padding-bottom:10px !important;
 	padding-top:10px !important;
   }
 }
@@ -825,7 +825,7 @@ h3.notion-collection__header {
 
 .notion-collection-list {
 	max-width: 100%  !important;
-	margin: 0 !important;
+	margin: 40px 0 !important;
 	padding-left: 55px  !important;
 	padding-right: 55px !important;
 	color: var(--primary-font-color)  !important;
