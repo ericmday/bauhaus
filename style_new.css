@@ -1162,3 +1162,23 @@ div.notion-image.normal {
     zoom:65% !important;
   }
 }
+
+/*Disable header video play controls*/
+
+video::-webkit-media-controls {
+  /*display: none !important;*/
+}
+
+video::-webkit-media-controls-enclosure {
+  /*display:none !important;*/
+}
+
+#page-setup .notion-toggle {
+  display:revert !important;
+}
+
+.notion-table-of-contents {
+  padding-left:15px;
+  position:sticky;
+  top:58px;
+}
