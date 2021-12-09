@@ -915,7 +915,7 @@ h3.notion-collection__header {
 /* Locations & Personnel */
 
 .notion-collection-board.medium {
-	margin-bottom: 0px !important;
+	margin: 40px 0px !important;
 	background-color: transparent !important;
 	padding-right:55px !important;
   padding-left:55px !important;
