@@ -750,7 +750,7 @@ h3.notion-collection__header {
 	display: grid !important;
 	grid-template-columns: repeat(4, 1fr) !important;
 	width: 80% !important;
-	margin: 0 auto !important;
+	margin: 40px auto !important;
 	grid-gap: 50px 10px !important;
 }
 
