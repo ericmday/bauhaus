@@ -1,0 +1,173 @@
+/* body super variables css code */
+
+:root {
+  --primary-bg: #fff;
+	--primary-font-color: #000;
+	--primary-border-color: #000;
+	--primary-color-subheader:#BA292E;
+	
+	/* https://www.schemecolor.com/ */
+	
+	/* Dark Blue Scheme */
+	/* #2E3D7C - slate blue */
+	/* #282528 - raisin black */
+	/* #FFA73C - yellow */
+	/* #BA292E - dark red */
+	/* #E15D3A - burnt orange */
+	
+	--button-background:#2E3D7C !important;
+	--button-border-radius:5px;
+	--button-font-color-default:#fff;
+	--button-font-color-hover:#000;
+	--button-bg-hover-color:linear-gradient(to right, #fff 0%, #fff 100%);
+	
+  --nav-bg: var(--primary-bg);
+	--nav-border-color: var(--primary-border-color);
+	--nav-font-color: var(--primary-font-color);
+	
+	--hero-text-bg: black;
+	--hero-font-color:white;
+	--hero-position-mobile: 0px 0px !important;
+	
+	--sticky-border-color: var(--primary-border-color);
+	--sticky-bg: var(--primary-bg);
+	--sticky-font-color: var(--primary-font-color);
+	
+	--textblock-bg: transparent;
+	--textblock-header-size: 16px;
+	--textblock-header-font-color: var(--primary-color-subheader);
+	--textblock-header-weight:600;
+	--textblock-font-color: var(--primary-font-color);
+	
+	--slider-font-color:white;
+	--slider-font-bg-color:linear-gradient(to right, black 0%, black 100%);
+	--slider-card-spacing:16px;
+	--slider-scrollbar-thumb:var(--primary-border-color);
+	--slider-scrollbar-active:var(--primary-border-color);
+	--slider-scrollbar-hover:var(--primary-border-color);
+	--slider-scrollbar-thickness:8px;
+	
+	--grid-gallery-text-color: white;
+	--grid-gallery-spacing:16px;
+	
+	--footer-border-color: var(--primary-border-color);
+	--footer-bg: transparent;
+	--footer-font-color: var(--primary-font-color);
+	
+	/* Padding on slider & grids */
+	--slider-gutter: 30px;
+	
+	/* Replace with your logo */
+	--preloader: url("https://ericmday.github.io/site/Bauhaus.png");
+	
+	/* Subpage template settings */
+	
+	--subpage-subheader-color: #999999;
+	--subpage-section-color: var(--textblock-header-font-color);
+	
+	--no-content:url('https://c.tenor.com/lnzb_NOYs1cAAAAC/baby-yoda.gif');
+	--no-content-color:var(--primary-font-color);
+}
+
+.super-navbar__content {
+    /*flex-direction: row-reverse;*/
+}
+
+a.notion-link.super-navbar__logo {
+    /*display: none;*/
+}
+
+.super-navbar__cta {
+  box-sizing: content !important;
+  width:fit-content !important;
+  text-align:center !important;
+  border:1px solid black !important;
+  border-radius:var(--button-border-radius);
+  min-height:40px !important;
+  display:inline-flex !important;
+  align-items: center !important;
+  padding:10px 20px !important;
+  color:var(--button-font-color-default) !important;
+  background: var(--button-bg-hover-color) !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 100% !important;
+  background-position: 0 65% !important;
+  margin-left: 0px !important;
+  transition: all .6s ease !important;
+  background-color:var(--button-background) !important;
+  font-weight:600;
+}
+
+.super-navbar__cta:hover {
+  background-size:100% 100% !important;
+  color:var(--button-font-color-hover) !important;
+}
+
+@media all and (min-width:860px) {
+a.notion-link.super-navbar__item:nth-child(5) {
+    border-right: 1px solid var(--primary-border-color);
+  }
+}
+
+.notion-callout.color-gray-light .notion-callout.color-gray-light strong, .notion-callout.bg-gray-light strong {
+  display:none;
+}
+
+/* Fade in animation */
+
+.notion-collection-card {
+	-webkit-animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	-moz-animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	-o-animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	-ms-animation: fadeIn 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+body, html { 
+  overflow-x:hidden;
+}
